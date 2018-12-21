@@ -1,7 +1,7 @@
 package cihan.kurs.odevScanner;
 
 import java.util.Scanner;
-
+ 
 public class ScanOdev {
 
 
