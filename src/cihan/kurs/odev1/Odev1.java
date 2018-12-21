@@ -1,5 +1,5 @@
 package cihan.kurs.odev1;
-
+ 
 public class Odev1 {
  
 	public Odev1() {  

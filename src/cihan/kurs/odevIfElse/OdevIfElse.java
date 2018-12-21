@@ -1,7 +1,7 @@
 package cihan.kurs.odevIfElse;
 
 import java.util.*;
- 
+  
 public class OdevIfElse {  	     
 	private static final Scanner scanner = new Scanner(System.in);
 	 
