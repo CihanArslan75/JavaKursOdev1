@@ -77,7 +77,7 @@ public class HesapMakinesi {
 				i++;    
 				//System.out.println(islemArray[i]);
 			}while(islemSonu);
-		 
+		  
 		   //System.out.println("i = " + i);
 		   islemSonucu =Double.parseDouble(islemArray[0]); 	
 			   
