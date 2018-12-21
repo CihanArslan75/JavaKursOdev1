@@ -84,7 +84,7 @@ public class HesapMakinesi {
 		   for(int j=1 ;j <= (i-3) ;j=j+2)	{
 				//System.out.println("j"+ j);
 				islemSonucu = islemYap(islemSonucu,islemArray[j],Double.parseDouble(islemArray[j+1]));
-			}
+			} 
 		    //1 - 3 + 4 / 2 * 3 = 
 			System.out.println("İslemSonucu : " +islemSonucu);
 			System.out.println("Çıkış için  'X' Tuşuna Basınız !!!!");
