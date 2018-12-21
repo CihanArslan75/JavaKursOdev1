@@ -74,7 +74,7 @@ public class HesapMakinesi {
 				if(islem.equals("="))  { 
 					islemSonu=false;
 				} 
-				i++;   
+				i++;    
 				//System.out.println(islemArray[i]);
 			}while(islemSonu);
 		 
