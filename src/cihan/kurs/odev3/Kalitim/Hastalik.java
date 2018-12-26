@@ -1,6 +1,6 @@
 package cihan.kurs.odev3.Kalitim;
 
-public class Hastalik {
+public class Hastalik {       
 	
 	private boolean bulasmaDurumu;
 	private float   bulasmaOrani ;
