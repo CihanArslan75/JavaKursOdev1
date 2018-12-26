@@ -8,12 +8,12 @@ public class Hastalik {
 	private boolean ilaciVarmi;
 	private String  tedaviTuru;
 	private float   ulkedeGorulmeSikligi;
+	private boolean kalitsalmi;
 	
 	
 	public boolean getBulasmaDurumu() {
 		return bulasmaDurumu;
 	}
-	
 	public void setBulasmaDurumu(boolean bulasmaDurumu) {
 		this.bulasmaDurumu = bulasmaDurumu;
 	}
@@ -47,6 +47,11 @@ public class Hastalik {
 	public void setUlkedeGorulmeSikligi(float ulkedeGorulmeSikligi) {
 		this.ulkedeGorulmeSikligi = ulkedeGorulmeSikligi;
 	}
-	
+	public boolean getKalitsalmi() {
+		return kalitsalmi;
+	}
+	public void setKalitsalmi(boolean kalitsalmi) {
+		this.kalitsalmi = kalitsalmi;
+	}
 	
 }
