@@ -4,11 +4,10 @@ public class Grip extends VirusEnfekt{
 	
 	public void sonuc() {
 		
-		setBulasmaDurumu(true); 
+		setBulasmaDurumu(true);    //Hastalik
 		setBulasmaOrani(0.80f);
 		setBulasmaTuru("Çevresel Yolla");
 		setIlaciVarmi(true);;
-		setTedaviTuru("İlaçlı");
 		setUlkedeGorulmeSikligi(0.70f);
 		setKalitsalmi(false);
 		
@@ -18,23 +17,22 @@ public class Grip extends VirusEnfekt{
 		String  gBulasmaTuru   		  = getBulasmaTuru();
 		String gIlaciVarmi    		  = "YOK"; 
 			if(getIlaciVarmi()==true) gIlaciVarmi= "VAR" ; 
-		String  gTedaviTuru           = getTedaviTuru();
 		float   gUlkedeGorulmeSikligi = getUlkedeGorulmeSikligi();
 		String gKalitsalmi           =  "HAYIR";
 			if(getKalitsalmi()==true) gKalitsalmi= "EVET" ; 
 		
-		getHastalikTuru("Grip");
+		getHastalikTuru("Grip");  //VirusEnfekt
 		
 		System.out.println("Bulaşıcı mı: " + gBulasmaDurumu);
 		System.out.println("Bulaşma Oranı : %" + gBulasmaOrani*100);
 		System.out.println("Bulaşma Türü : " + gBulasmaTuru);
 		System.out.println("İlacı Varmı : " +gIlaciVarmi );
-		System.out.println("Tedavi Türü : " + gTedaviTuru);
 		System.out.println("Ülkede Görülme Sıklığı Nedir : %" + gUlkedeGorulmeSikligi*100);
 		System.out.println("Kalıtsal mı : " + gKalitsalmi);
-		//return "\"Bulaşıcı mı: \" + gBulasmaDurumu;
-	
+		getTedaviMetodu() ;
+			
 	}
 	
+
 
 }

@@ -6,7 +6,6 @@ public class Hastalik {
 	private float   bulasmaOrani ;
 	private String  bulasmaTuru;
 	private boolean ilaciVarmi;
-	private String  tedaviTuru;
 	private float   ulkedeGorulmeSikligi;
 	private boolean kalitsalmi;
 	
@@ -35,12 +34,6 @@ public class Hastalik {
 	public void setIlaciVarmi(boolean ilaciVarmi) {
 		this.ilaciVarmi = ilaciVarmi;
 	}
-	public String getTedaviTuru() {
-		return tedaviTuru;
-	}
-	public void setTedaviTuru(String tedaviTuru) {
-		this.tedaviTuru = tedaviTuru;
-	}
 	public float getUlkedeGorulmeSikligi() {
 		return ulkedeGorulmeSikligi;
 	}
@@ -52,6 +45,10 @@ public class Hastalik {
 	}
 	public void setKalitsalmi(boolean kalitsalmi) {
 		this.kalitsalmi = kalitsalmi;
+	}
+	
+	public void getTedaviMetodu() {
+		 System.out.println("Tedavi Türü : İlaçla Tedavi Edilebilir .");
 	}
 	
 }

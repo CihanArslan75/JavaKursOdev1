@@ -8,7 +8,7 @@ public class Menenjit extends BakteriEnfekt{
 		setBulasmaOrani(0.0f);
 		setBulasmaTuru("Yok");
 		setIlaciVarmi(true);;
-		setTedaviTuru("Aşı");
+		//setTedaviTuru("Aşı");
 		setUlkedeGorulmeSikligi(0.10f);
 		setKalitsalmi(true);
 		
@@ -18,7 +18,7 @@ public class Menenjit extends BakteriEnfekt{
 		String  gBulasmaTuru   		  = getBulasmaTuru();
 		String gIlaciVarmi    		  = "YOK"; 
 			if(getIlaciVarmi()==true) gIlaciVarmi= "VAR" ; 
-		String  gTedaviTuru           = getTedaviTuru();
+		
 		float   gUlkedeGorulmeSikligi = getUlkedeGorulmeSikligi();
 		String gKalitsalmi           =  "HAYIR";
 			if(getKalitsalmi()==true) gKalitsalmi= "EVET" ; 
@@ -29,10 +29,15 @@ public class Menenjit extends BakteriEnfekt{
 		System.out.println("Bulaşma Oranı : %" + gBulasmaOrani*100);
 		System.out.println("Bulaşma Türü : " + gBulasmaTuru);
 		System.out.println("İlacı Varmı : " +gIlaciVarmi );
-		System.out.println("Tedavi Türü : " + gTedaviTuru);
 		System.out.println("Ülkede Görülme Sıklığı Nedir : %" + gUlkedeGorulmeSikligi*100);
 		System.out.println("Kalıtsal mı : " + gKalitsalmi);
+		getTedaviMetodu() ;
 		
+	}
+	
+	@Override
+	public void getTedaviMetodu() {
+		System.out.println("Tedavi Türü :  Hem Aşı hem İlaç ile Tedavi Edilebilir.");
 	}
 
 }

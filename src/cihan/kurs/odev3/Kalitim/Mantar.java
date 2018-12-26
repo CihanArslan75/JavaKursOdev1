@@ -8,7 +8,6 @@ public class Mantar extends MantarEnfekt{
 		setBulasmaOrani(0.70f);
 		setBulasmaTuru("Çevresel Yolla");
 		setIlaciVarmi(true);;
-		setTedaviTuru("İlaçla Tedavi");
 		setUlkedeGorulmeSikligi(0.50f);
 		setKalitsalmi(false);
 		
@@ -18,7 +17,6 @@ public class Mantar extends MantarEnfekt{
 		String  gBulasmaTuru   		  = getBulasmaTuru();
 		String gIlaciVarmi    		  = "YOK"; 
 			if(getIlaciVarmi()==true) gIlaciVarmi= "VAR" ; 
-		String  gTedaviTuru           = getTedaviTuru();
 		float   gUlkedeGorulmeSikligi = getUlkedeGorulmeSikligi();
 		String gKalitsalmi           =  "HAYIR";
 			if(getKalitsalmi()==true) gKalitsalmi= "EVET" ; 
@@ -29,9 +27,9 @@ public class Mantar extends MantarEnfekt{
 		System.out.println("Bulaşma Oranı : %" + gBulasmaOrani*100);
 		System.out.println("Bulaşma Türü : " + gBulasmaTuru);
 		System.out.println("İlacı Varmı : " +gIlaciVarmi );
-		System.out.println("Tedavi Türü : " + gTedaviTuru);
 		System.out.println("Ülkede Görülme Sıklığı Nedir : %" + gUlkedeGorulmeSikligi*100);
 		System.out.println("Kalıtsal mı : " + gKalitsalmi);
+		getTedaviMetodu() ;
 		
 	}
 }
