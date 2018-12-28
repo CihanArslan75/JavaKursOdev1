@@ -7,7 +7,7 @@ public class Runner {
 		Insan insan = new Insan();
 		
 		insan.setAdi("CİHAN ARSLAN");
-		insan.setDogumYeri("Elbistan");
+		insan.setDogumYeri("ELBİSTAN");
 		insan.setDogumTarihi("26/06/1974");
 		String kendiAdi =insan.getAdi();
 		String kendiDogumYeri=insan.getDogumYeri();
@@ -68,15 +68,48 @@ public class Runner {
 		String babaBabaDogumYeri=insan.baba.baba.getDogumYeri();
 		String babaBabaDogumTarihi=insan.baba.baba.getDogumTarihi();
 		
+	
+		insan.anne.anne.anne = new Insan();
+		insan.anne.anne.anne.setAdi("FATMA ARSLAN");
+		insan.anne.anne.baba = new Insan();
+		insan.anne.anne.baba.setAdi("ALİ ARSLAN");
+		String anneAnneAnneAnneAdi=insan.anne.anne.anne.getAdi();
+		String anneAnneAnneBabaAdi=insan.anne.anne.baba.getAdi();
 		
+		insan.anne.baba.anne = new Insan();
+		insan.anne.baba.anne.setAdi("ŞEHRİBAN ŞAHİN");
+		insan.anne.baba.baba = new Insan();
+		insan.anne.baba.baba.setAdi("ALİ ŞAHİN");
+		String anneAnneBabaAnneAdi=insan.anne.baba.anne.getAdi();
+		String anneAnneBabaBabaAdi=insan.anne.baba.baba.getAdi();
 		
-		System.out.println('\t'+kendiAdi + " " +kendiDogumYeri +" " + kendidogumTarihi);
-		System.out.print(anneAdi + " " +anneDogumYeri +" " + anneDogumTarihi +'\t');
-		System.out.println('\t'+babaAdi + " " +babaDogumYeri +" " + babaDogumTarihi);
+		insan.baba.anne.anne = new Insan();
+		insan.baba.anne.anne.setAdi("ŞEHRİBAN ŞAHİN");
+		insan.baba.anne.baba = new Insan();
+		insan.baba.anne.baba.setAdi("ALİ ŞAHİN");
+		String babaAnneAnneAnneAdi=insan.baba.anne.anne.getAdi();
+		String babaAnneAnneBabaAdi=insan.baba.anne.baba.getAdi();
+		
+		insan.baba.baba.anne = new Insan();
+		insan.baba.baba.anne.setAdi("FATMA ARSLAN");
+		insan.baba.baba.baba = new Insan();
+		insan.baba.baba.baba.setAdi("ALİ ARSLAN");
+		String babaAnneBabaAnneAdi=insan.baba.baba.anne.getAdi();
+		String babaAnneBabaBabaAdi=insan.baba.baba.baba.getAdi();
+		
+	
+		
+		System.out.println("                                           "+kendiAdi + " " +kendiDogumYeri +" " + kendidogumTarihi);
+		System.out.print("                "+anneAdi + " " +anneDogumYeri +" " + anneDogumTarihi +'\t');
+		System.out.println("                                              "+babaAdi + " " +babaDogumYeri +" " + babaDogumTarihi);
 		System.out.print(anneAnneAdi + " " +anneAnneDogumYeri +" " + anneAnneDogumTarihi +'\t');
-		System.out.print('\t'+anneBabaAdi + " " +anneBabaDogumYeri +" " + anneBabaDogumTarihi +'\t');
+		System.out.print(anneBabaAdi + " " +anneBabaDogumYeri +" " + anneBabaDogumTarihi +'\t');
 		System.out.print('\t'+babaAnneAdi + " " +babaAnneDogumYeri +" " + babaAnneDogumTarihi +'\t');
-		System.out.print('\t'+babaBabaAdi + " " +babaBabaDogumYeri +" " + babaBabaDogumTarihi +'\t');
+		System.out.println('\t'+babaBabaAdi + " " +babaBabaDogumYeri +" " + babaBabaDogumTarihi +'\t');
+		System.out.print(anneAnneAnneAnneAdi + "      " +anneAnneAnneBabaAdi +'\t');
+		System.out.print(anneAnneBabaAnneAdi + "        " +anneAnneBabaBabaAdi +'\t');
+		System.out.print('\t'+babaAnneAnneAnneAdi + "      " +"    "+babaAnneAnneBabaAdi +'\t');
+		System.out.print('\t'+babaAnneBabaAnneAdi + "        " +"    "+babaAnneBabaBabaAdi +'\t');
 		
 				
 		
