@@ -40,7 +40,7 @@ public class ScanOdev {
 	}
 
 	private int islemYap(int a, int b, String islem) {
-		System.out.println("----------------------------- ");
+		 System.out.println("----------------------------- ");
 		int sonuc;
 		//sonuc = a+islem+b;
 		if(islem.equals("+"))          sonuc = a+b;
