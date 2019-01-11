@@ -120,14 +120,14 @@ public class BombsArray {
 			 }
 		 }	
 		
-		 for(int i =0 ;i<Runner.SIZE ;i++)
-		  { 
-			  for(int j=0 ; j<Runner.SIZE ;j++)
-			  {	
-				  System.out.print(formatter.format(bombsArray[i][j])+" ");
-			  }
-			  System.out.println();
-		  }
+//		 for(int i =0 ;i<Runner.SIZE ;i++)
+//		  { 
+//			  for(int j=0 ; j<Runner.SIZE ;j++)
+//			  {	
+//				  System.out.print(formatter.format(bombsArray[i][j])+" ");
+//			  }
+//			  System.out.println();
+//		  }
 		this.bombsArray = bombsArray;
 	} 
 	

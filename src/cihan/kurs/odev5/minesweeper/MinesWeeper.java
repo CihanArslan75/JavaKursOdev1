@@ -7,24 +7,7 @@ import java.util.Scanner;
 
 public class MinesWeeper {
 	
-	public MinesWeeper() {
-		
-	}
 
-/******************************************************/	
-	public  void mwDraw(String[][] bSightArray) {
-	
-		for(int i=0;i<Runner.SIZE;i++) {
-			for(int j =0;j<Runner.SIZE;j++) {
-				System.out.printf("%5s",bSightArray[i][j]+" ");
-			}
-			System.out.println();
-		}
-		
-	}
-
-/*************************************************************/	
-	
 	public  void  playMW() {
 		Scanner sc=new Scanner(System.in);
 		int[]   ijBomb = new int[2]; 
@@ -41,6 +24,7 @@ public class MinesWeeper {
 		String[][] bSightArray =b.getSightBombsArray();
 		
 		mwDraw(bSightArray);
+		
 				
 		do{
 			 System.out.println("Seçiminizi S ile Bombaları B ile Giriniz.Çıkmak için X tuşuna Basınız. !!");
@@ -84,24 +68,15 @@ public class MinesWeeper {
 		
 	}
 	
-	/**************************************************************/
-	public  void mwOpenBox(String box) {
-		
-		String[][] mtArray=new String[Runner.SIZE][Runner.SIZE]; 
-		NumberFormat formatter = new DecimalFormat("000");
-		
-		int numberMW=0;
-		//int boxValue= ;
+	/******************************************************/	
+	public  void mwDraw(String[][] bSightArray) {
+	
 		for(int i=0;i<Runner.SIZE;i++) {
 			for(int j =0;j<Runner.SIZE;j++) {
-				mtArray[i][j]="S"+formatter.format(numberMW);
-				System.out.print(mtArray[i][j]+"  ");
-				numberMW++;
+				System.out.printf("%5s",bSightArray[i][j]+" ");
 			}
 			System.out.println();
 		}
-			
+		
 	}
-/*********************************************************************/	
-
 }
