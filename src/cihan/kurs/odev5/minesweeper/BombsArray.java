@@ -28,11 +28,13 @@ public class BombsArray {
 			this.sightBombsArray = sightBombsArray;
 	}
 	
-	public void setSightBombsArray(String selectFirst,int row,int column) {
+	public void setSightBombsArray(String select,int row,int column) {
+		NumberFormat formatter = new DecimalFormat("000");
 		int iFirst;
         int jFirst;
         int iLast;
         int jLast;
+        String selectFirst=select.substring(0,1).toUpperCase( );
 /***************************************************************************************/
        // System.out.println("aaaa1:"+sightBombsArray[row][column].substring(0,1));
 	  if(bombsArray[row][column]!=Runner.BSIZE  && selectFirst.equals("S")) {   //bomba olmayan kutular için set
@@ -65,8 +67,14 @@ public class BombsArray {
 	    }
 	  }
 	  else   //  bomba olan  kutular için  flag  
-	  {  
-		  sightBombsArray[row][column]="BOMB";
+	  {   if(sightBombsArray[row][column].equals("BOMB")) 
+		  {
+		     sightBombsArray[row][column]="S"+select.substring(1,4);
+		  }
+	      else
+	      {
+		    sightBombsArray[row][column]="BOMB";
+	      }
 	  }
         this.sightBombsArray = sightBombsArray;
 
@@ -120,14 +128,14 @@ public class BombsArray {
 			 }
 		 }	
 		
-//		 for(int i =0 ;i<Runner.SIZE ;i++)
-//		  { 
-//			  for(int j=0 ; j<Runner.SIZE ;j++)
-//			  {	
-//				  System.out.print(formatter.format(bombsArray[i][j])+" ");
-//			  }
-//			  System.out.println();
-//		  }
+		 for(int i =0 ;i<Runner.SIZE ;i++)
+		  { 
+			  for(int j=0 ; j<Runner.SIZE ;j++)
+			  {	
+				  System.out.print(formatter.format(bombsArray[i][j])+" ");
+			  }
+			  System.out.println();
+		  }
 		this.bombsArray = bombsArray;
 	} 
 	

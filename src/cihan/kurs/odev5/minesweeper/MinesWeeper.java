@@ -40,9 +40,15 @@ public class MinesWeeper {
 			  }
 			 
 			 int selectInt=Integer.parseInt((select.substring(1,4)));
-			 if(selectInt>=Runner.BSIZE) 
+			 if(selectInt>=Runner.BSIZE  ) 
 			 {
-				 System.out.println("Seçiminiz Yanlış!");
+				 System.out.println("Seçiminiz Yanlış1!");
+				 continue;
+			 }
+			 
+			 if(!selectFirst.equals("S")  && !selectFirst.equals("B")) 	 
+			 {
+				 System.out.println("Seçiminiz Yanlış1!");
 				 continue;
 			 }
 			 
@@ -51,7 +57,7 @@ public class MinesWeeper {
 		  	 row=ijBomb[0];
 			 column=ijBomb[1];
 			 
-		  	 b.setSightBombsArray(selectFirst,row,column);	
+		  	 b.setSightBombsArray(select,row,column);	
 		  		  
 		  			  	 
 		  	 if(bArray[row][column]==Runner.BSIZE  &&  selectFirst.equals("S") ) 
@@ -64,6 +70,7 @@ public class MinesWeeper {
 		   		 mwDraw(bSightArray);
 		   	 }
 		}while(playEnd);
+		sc.close();
      	
 		
 	}
