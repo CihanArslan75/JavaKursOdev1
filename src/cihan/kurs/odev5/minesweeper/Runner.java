@@ -15,7 +15,7 @@ public class Runner {
 		MinesWeeper mw=new  MinesWeeper() ;
 		mw.playMW();
 	}
-	
+	   
 	/*********************************************************************/		
 	public static int[] findNumber(int a) {
         //Statik array için Gelen sayıya 1. ve 2. idisini bulur /

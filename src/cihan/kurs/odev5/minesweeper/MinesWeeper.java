@@ -37,7 +37,7 @@ public class MinesWeeper {
 				playEnd=false;	
 			    break;
 				 
-			  }
+			  } 
 			 
 			 int selectInt=Integer.parseInt((select.substring(1,4)));
 			 if(selectInt>=Runner.BSIZE  ) 

@@ -65,7 +65,7 @@ public class BombsArray {
 	    {
 	    	sightBombsArray[row][column]=String.valueOf(bombsArray[row][column]);
 	    }
-	  }
+	  } 
 	  else   //  bomba olan  kutular için  flag  
 	  {   if(sightBombsArray[row][column].equals("BOMB")) 
 		  {
