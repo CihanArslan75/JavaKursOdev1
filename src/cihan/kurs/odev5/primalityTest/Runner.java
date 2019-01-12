@@ -9,6 +9,7 @@ public class Runner {
 		final Scanner scanner = new Scanner(System.in);
 		  String n = scanner.nextLine();
 		  BigInteger nn = new BigInteger(n);
+		
 		  boolean prime=true;
 		  //System.out.println(nn.isProbablePrime(100) ? "prime" : "not prime");
 		  BigInteger i=BigInteger.valueOf(2) ;
@@ -18,7 +19,7 @@ public class Runner {
 	         }
 	         else
 	         {
-		       while(i.compareTo(nn)<0) {
+		       while(i.compareTo(nn)<0) {  
 		    	   //System.out.println("a");
 				 	if(i.equals(nn) )
 				 	{
