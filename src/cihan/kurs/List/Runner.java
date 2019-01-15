@@ -34,7 +34,5 @@ public class Runner {
 			System.out.print("Son Liste1 : "+liste1);
 			System.out.println();
 			System.out.print("Son Liste2 : "+liste2);
-			
 	}
-
 }
