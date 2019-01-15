@@ -98,8 +98,8 @@ public class CihanArrayList<T> {
 		Object temp=dataArray[0];
 		for(int i=0;i<size;i++) {
 			for(int j=0;j<size;j++) {
-				if(temp > dataArray[j])
-				{
+				if(dataArray[j])
+				{ 
 					dataArray[i]=dataArray[j];
 				}
 //					temp=(T)dataArray[i];
