@@ -72,8 +72,7 @@ public class CihanArrayList<T> {
 	}
 	
 	  	   
-	@Override
-	public String toString() {
+	public String toStringCihan() {
 		String temp="[";
 		for(int  i=0; i< size;i++) {
 			if(i<size-1) temp = temp  + dataArray[i] +", ";
@@ -95,22 +94,23 @@ public class CihanArrayList<T> {
 	}
 	
 	public T[] arraySort() {
-		Object temp=dataArray[0];
+		
+		T temp=(T)dataArray[0];
+		
 		for(int i=0;i<size;i++) {
-			for(int j=0;j<size;j++) {
-				if(dataArray[j])
+			for(int j=i;j<size;j++) {
+				if(dataArray[j].toString().compareTo(temp.toString())<0)
 				{ 
 					dataArray[i]=dataArray[j];
+					dataArray[j]=temp;
 				}
-//					temp=(T)dataArray[i];
-//				dataArray[i]=dataArray[size-i-1];
-//				dataArray[size-i-1]=temp;
+				temp=(T) dataArray[i];
 			}
 		}
 		
 		return (T[])dataArray;
 	}
 	
-	
+
 
 }

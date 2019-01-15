@@ -34,6 +34,16 @@ public class Runner {
 		c.add(3, "aaaaaaaaaaaaaaaaa");
 		c.add("wwwwwwww");
 		c.remove(0);
+		c.add(1);
+		c.add(5);
+		c.add(3);
+		
+		System.out.println(c.toStringCihan());
+		System.out.println("****************************************************************************************");
+		c.arraySort();
+		System.out.println(c.toStringCihan());
+		System.out.println("****************************************************************************************");
+	
 		c.arrayReverse();
 		
 		l.add(0,1);
@@ -54,11 +64,15 @@ public class Runner {
 		l.add(3, "aaaaaaaaaaaaaaaaa");
 		l.add("wwwwwwww");
 		l.remove(0);
+		l.add(1);
+		l.add(5);
+		l.add(3);
+		
 				
 //		for(Integer i=0;i<c.getSize();i++) {
 //			System.out.println(c.get(i));
 //		}
-		System.out.println(c.toString());
+		System.out.println(c.toStringCihan());
 		System.out.println("****************************************************************************************");
 		System.out.println(l);
 		
