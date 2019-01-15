@@ -25,7 +25,7 @@ public class Runner {
 		c.add(6,"EDA");
 		c.add(7,"BİLGE");
 		c.remove(2);
-		c.remove(0);
+		c.remove(0); 
 		c.remove(4);
 		c.add(4,"sssssssssssssssss");
 		c.add(5,"sssssssssssssssss");
