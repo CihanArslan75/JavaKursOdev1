@@ -75,7 +75,10 @@ public class Runner {
 		System.out.println(c.toStringCihan());
 		System.out.println("****************************************************************************************");
 		System.out.println(l);
-		
+		System.out.println("+++++***************************************************************************");
+		System.out.println(l.toString());
+		System.out.println("****************************************************************************************");
+		System.out.println(c.toString());
 	}
 
 }
