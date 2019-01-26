@@ -8,6 +8,9 @@ public class Insan implements CihanComparator {
 	
 	static int bosluk1=0;
 
+	public Insan () {
+		
+	}
 	
 	public Insan (String adSoyad,int yas,double boy) {
 		this.adSoyad=adSoyad;
