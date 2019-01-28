@@ -1,5 +1,4 @@
 package cihan.kurs.odev7.CihanComparator;
-import cihan.kurs.odev7.CihanComparator.CihanComparator;
 
 public class Insan implements CihanComparator {
 	private String adSoyad;
