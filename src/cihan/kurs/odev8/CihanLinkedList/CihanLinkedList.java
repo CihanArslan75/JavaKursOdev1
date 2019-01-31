@@ -5,97 +5,64 @@ public class CihanLinkedList<E> {
     private Node<E> first;
     private Node<E> last;
     
-
-    
-    
-    /*public void add (E e) {
-    	if(first==null) addFirst ( e);
-    	else  add1( e);
+    public void add(E e) {
+    	Node<E> node= new Node(e,null);
+        if(first==null) {
+        	first=node;
+        	last=node;
+        }
+        else
+        {
+        	last.next=node; // sonraki elemanı gösterir
+			last=node;
+        }
+        size++;
     }
-    
-    
-    public void addFirst (E e) {
-    	 final Node<E> f = first;
-         final Node<E> newNode = new Node<>(null, e, f);
-         first = newNode;
-         if (f == null)
-             last = newNode;
-         else
-             f.prevNode = newNode;
-       	size++;
-    }
-    
-    
-    public void add1(E e) {
-       	 final Node<E> l = last;
-         final Node<E> newNode = new Node<>(l, e, null);
-         last = newNode;
-         if (l == null)
-             first = newNode;
-         else
-             l.nextNode = newNode;
-    	size++;
-    	 
-    }
-
+      
     public void remove(int index) {
-    	checkElementIndex(index);
-    	if(index==size-1) {
-    		last=last.prevNode;
-    	}
-    	else  
-    	if(index==0) {
-    		first=first.nextNode;
+    	indexControl(index);
+   
+       if(index==0) {
+    		first=first.next;
     	}
     	else
-    	{ 
-    		Node x=first;
-    		for(int i=0;i<size-1;i++) {
-    		  if(i<index) {
-    			x.data=x.data;
-    			}
-    		  else if(i==index)
-    		  { 
-    			  x.data=x.nextNode.data; 
-    		  }
-    		  else
-    		  {     
-    			 x.data=x.nextNode.data;
-    			 
-    		  }
-    		  x=x.nextNode;
-    	 } 	
+    	{ 	Node x=first;
+    		for(int i=1;i<size;i++) {
+    		  	if(i==index )  { 
+    		  		  //System.out.println("bbbb:"+i);
+	    			  x.next=x.next.next;  }
+	    		  else  
+	    		  { x=x.next; 
+	    		   //System.out.println("aaaaa:"+i);
+	    		  }
+	       		
+	        } 
+    		last=x;
+    		//System.out.println("last:"+last.data);
     		
-    	 }
+        }
 	    
-    	size--;
+     	size--;
     }
     
-        
-    public E get(int index) {
-    	checkElementIndex(index);
-      	return node(index).data;
-    	
-    }
-    
-    Node<E> node(int index) {
-    	Node<E> x=first;
+    public E get(int index)  {
+    	indexControl(index);
+    	Node ii=first;
     	for(int i=0;i<index;i++) {
-    		x=x.nextNode;
+    		ii=ii.next;
     	}
-		return x;
+    	return (E) ii.data;
     }
     
-    private void checkElementIndex(int index) {
-    	if(!isElementIndex(index) )
-    		throw new IndexOutOfBoundsException(outOfBoundsMsg(index));
+     public void indexControl(int index) {
+    	if(!isIndexValid(index))  
+    	{
+    		//throw new NullPointerException(index +" indeksi Geçerli Değil.Size :" + size);
+    		throw new IndexOutOfBoundsException(index +" indeksi Geçerli Değil.Size :" + size);
+    	}
     }
-    private boolean isElementIndex(int index) {
-    	return index>=0 && index<size;
-    }
-    private String outOfBoundsMsg(int index) {
-    	return "Index : " +index + " , Size : "+size ;
-    }
-  */  
+     public boolean isIndexValid(int index) {
+    	 return index >= 0 && index < size;
+     }
     
 }
