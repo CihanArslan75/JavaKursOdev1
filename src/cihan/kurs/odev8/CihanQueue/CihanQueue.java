@@ -2,7 +2,7 @@ package cihan.kurs.odev8.CihanQueue;
 
 import java.util.Queue;
 
-public interface  CihanQueue<E>  {
+public interface  CihanQueue<E>  {    
 
 	public boolean add(E e) ;
 	public boolean offer(E e);

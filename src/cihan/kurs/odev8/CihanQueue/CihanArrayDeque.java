@@ -33,7 +33,7 @@ public class CihanArrayDeque<E> implements CihanQueue<E> {
 		dataArray[size-1]=e;
 		return true;
 	}
-
+ 
 	@Override
 	public boolean offer(E e) {
 		// TODO Auto-generated method stub

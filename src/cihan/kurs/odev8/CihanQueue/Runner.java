@@ -13,10 +13,10 @@ public class Runner {
 	c.add("Damla");
 	c.add("Aykut");
 	c.add("Fırat");
-	c.add("Ceyda");
+	c.add("Ceyda");  
 	c.add("Görkem");
 	c.add("Tuğçe");
-	System.out.println(c.peek());
+	System.out.println(c.peek()); 
 	System.out.println("*********************************");
 	System.out.println(c.element());
 	System.out.println("*********************************");
