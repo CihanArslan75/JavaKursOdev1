@@ -1,7 +1,9 @@
 package cihan.kurs.odev8.CihanQueue;
 
 import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.Queue;
 
 public class Runner {
@@ -16,6 +18,7 @@ public class Runner {
 	c.add("Ceyda");  
 	c.add("Görkem");
 	c.add("Tuğçe");
+	c.add("Tuğçe");
 	System.out.println(c.peek()); 
 	System.out.println("*********************************");
 	System.out.println(c.element());
@@ -29,25 +32,28 @@ public class Runner {
 	System.out.println(c.element());
 	System.out.println("*********************************");
 	
-//	Queue<String> kuyruk = new ArrayDeque<String>();
-//		kuyruk.offer("Merve");
-//		kuyruk.offer("Damla");
-//		kuyruk.offer("Aykut");
-//		kuyruk.offer("Fırat");
-//		kuyruk.offer("Ceyda");
-//		kuyruk.offer("Görkem");
-//		kuyruk.offer("Tuğçe");
-//		System.out.println(kuyruk);
-//		
-//		Iterator it= kuyruk.iterator();	
-//		System.out.println(kuyruk.size());
-//		
-//		while(it.hasNext()) {
-//			
-//			String iv=(String) it.next();
-//			System.out.println(iv);
-//			
-//		}
+	//Queue<String> kuyruk = new ArrayDeque<String>();
+	//Queue<String> kuyruk = new LinkedList<String>();
+	   Deque kuyruk = new ArrayDeque();
+		kuyruk.offer("Merve");
+		kuyruk.offer("Damla");
+		kuyruk.offer("Aykut");
+		kuyruk.offer("Fırat");
+		kuyruk.offer("Ceyda");
+		kuyruk.offer("Görkem");
+		kuyruk.offer("Tuğçe");
+		kuyruk.add("Tuğçe");
+		System.out.println(kuyruk);
+		
+		Iterator it= kuyruk.iterator();	
+		System.out.println(kuyruk.size());
+		
+		while(it.hasNext()) {
+			
+			String iv=(String) it.next();
+			System.out.println(iv);
+			
+		}
 //		System.out.println(kuyruk.peek());
 //		System.out.println(kuyruk.poll());
 //		System.out.println(kuyruk.size());
