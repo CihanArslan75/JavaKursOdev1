@@ -1,5 +1,5 @@
 package cihan.kurs.odev8.CihanLinkedList;
-
+ 
 public class CihanLinkedList<E> {
 	private int size;
     private Node<E> first;
