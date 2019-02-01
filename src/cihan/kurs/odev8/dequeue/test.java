@@ -17,11 +17,11 @@ public class test {
         
         Object[] obj=new Object[n];
         obj=deque.toArray();
-        
+         
         for(int i=0;i<=nn;i++) {
-           Set<Integer> obj1 = new HashSet<Integer>();
+            HashMap<Integer, Integer> obj1 = new HashMap<Integer, Integer>();
            for(int j=i;j<mm;j++) {
-        	   obj1.add((Integer)(obj[j])); 
+        	   obj1.put((Integer)(obj[j]),(Integer)(obj[j])); 
            }
            if(enbuyuk<obj1.size())  enbuyuk=obj1.size();
            mm++;
@@ -31,6 +31,8 @@ public class test {
         
       
         System.out.println(enbuyuk);
+        
+           
    }
 }
 
