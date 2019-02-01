@@ -17,7 +17,7 @@ public class test {
         
         Object[] obj=new Object[n];
         obj=deque.toArray();
-         
+          
         for(int i=0;i<=nn;i++) {
             HashMap<Integer, Integer> obj1 = new HashMap<Integer, Integer>();
            for(int j=i;j<mm;j++) {
@@ -27,7 +27,7 @@ public class test {
            mm++;
            if(enbuyuk==m) break;
            if(mm==n+1) break;
-           }
+           } 
         
       
         System.out.println(enbuyuk);
