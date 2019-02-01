@@ -4,7 +4,7 @@ public class CihanLinkedList<E> {
 	private int size;
     private Node<E> first;
     private Node<E> last;
-    
+     
     public void add(E e) {
     	Node<E> node= new Node(e,null);
         if(first==null) {
